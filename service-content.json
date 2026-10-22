@@ -1,0 +1,102 @@
+[
+  {
+    "slug": "musculoskeletal-physiotherapy-port-augusta",
+    "card": "MSK Injuries",
+    "linkText": "musculoskeletal injury care",
+    "title": "Advanced Musculoskeletal Injury Management",
+    "description": "Musculoskeletal physiotherapy in Port Augusta for complex neck, shoulder, spinal and joint conditions at Nova Movement Atelier.",
+    "intro": "Whether you are recovering from a long-standing joint condition, chronic pain, or a complex neck and headache issue, receiving specialised care makes all the difference in your recovery timeline.",
+    "sections": [
+      ["Why Choose Our Musculoskeletal Clinic?", {"items": [
+        {"label": "Advanced APA & Specialist Training", "text": "Surendhiran Subramanian brings a high level of clinical expertise to Port Augusta, having completed advanced postgraduate courses directly through the Australian Physiotherapy Association (APA) and Australian Specialist Physiotherapy Education (ASPE)."},
+        {"label": "Targeted Solutions for Complex Pain", "text": "Our clinician is certified in elite diagnostic and treatment frameworks, focusing on advanced upper cervical spine and head care, specialised spinal mechanics, and advanced joint rehabilitation."},
+        {"label": "Evidence-Based Recovery", "text": "We combine hands-on manual therapy, specialised movement concepts (such as the Mulligan Concept for joint mobilisation), and targeted therapeutic exercise to achieve long-term pain relief and restore physical independence."}
+      ]}],
+      ["Specialised Conditions We Expertly Manage", {"conditions": [
+        {"title": "Neck Pain, Headaches & Whiplash", "focus": "Elite management of the upper cervical spine, helping resolve tension headaches, dizziness arising from the neck, and restricted neck movement following chronic strain or impact.", "applicationLabel": "Treatment Approach", "application": "Precise manual therapy and upper-cervical stability training based on advanced specialist protocols."},
+        {"title": "Complex Shoulder & Upper Limb Conditions", "focus": "Expert care for persistent rotator cuff issues, bursitis, frozen shoulder, and chronic shoulder stiffness.", "applicationLabel": "Treatment Approach", "application": "Implementing specialised clinical shoulder mechanics to restore painless overhead reaching, lifting, and everyday movement."},
+        {"title": "Chronic Lower Back & Pelvic Girdle Pain", "focus": "Long-term management for sciatica, disc injuries, joint stiffness, and deep muscular imbalances.", "applicationLabel": "Treatment Approach", "application": "Combining targeted spinal decompression exercises, posture retraining, and core stability programs to unload your spine."},
+        {"title": "Hip, Knee & Ankle Joint OA/Degeneration", "focus": "Helping manage arthritis, chronic joint pain, and reduced mobility without immediate surgical intervention.", "applicationLabel": "Treatment Approach", "application": "Specialised joint loading protocols and custom exercise pacing to strengthen surrounding muscles and preserve joint health."}
+      ]}],
+      ["Our Multi-Modal Rehabilitation Pathways", {"ordered": true, "items": [
+        {"label": "Joint Mobilisation with Movement", "text": "Utilising accredited Mulligan Concept techniques to instantly improve restricted joint ranges without pain."},
+        {"label": "Hydrotherapy & Pool Rehabilitation", "text": "Tailored aquatic exercise programs designed to unload painful joints, build core strength, and accelerate early-stage recovery."},
+        {"label": "Strength & Functional Conditioning", "text": "Transitioning from acute pain relief to a fully equipped home or studio-based gym program to prevent symptoms from returning."}
+      ]}],
+      ["Restore Your Movement & Live Pain-Free", {"text": "Don't let chronic aches or a stubborn injury limit your potential. Book a comprehensive evaluation with Port Augusta's advanced musculoskeletal physical therapy specialist today.", "booking": true, "bookingLabel": "Book a musculoskeletal assessment"}]
+    ],
+    "faqs": []
+  },
+  {
+    "slug": "sports-physiotherapy-port-augusta",
+    "card": "Sports Recovery",
+    "linkText": "sports physiotherapy",
+    "title": "Sports Injury & Performance Physiotherapy",
+    "description": "Sports injury assessment, athletic rehabilitation, taping and performance physiotherapy in Port Augusta at Nova Movement Atelier.",
+    "intro": "Whether you are a competitive athlete, a weekend warrior, or looking to safely return to physical activity after an injury, elite sports-specific care is essential to get you back at peak performance.",
+    "sections": [
+      ["Why Choose Our Sports Physiotherapy Clinic?", {"items": [
+        {"label": "Dual APA Sports Credentials", "text": "Surendhiran Subramanian has completed both Level 1 and Level 2 Sports Physiotherapy qualifications directly through the Australian Physiotherapy Association (APA). This advanced training delivers the gold standard in sports medicine and athletic care."},
+        {"label": "Advanced On-Field & Clinic Management", "text": "Our sports frameworks cover the full spectrum of care—from immediate acute on-field injury management and specialised athletic taping to comprehensive, long-term athletic rehabilitation."},
+        {"label": "Evidence-Based Athletic Progression", "text": "We don't just treat your pain. We build custom pathways that incorporate sport-specific biomechanical training, loading mechanics, and advanced strength and conditioning to make you more resilient than before your injury."}
+      ]}],
+      ["Advanced Skills Taught in the APA Sports Framework", {"conditions": [
+        {"title": "Acute On-Field & Emergency Care", "focus": "Rapid triage, diagnosis, and acute management of soft tissue injuries, joint dislocations, and trauma during live sporting events.", "application": "Ensuring completely safe, evidence-based return-to-play decisions on match days."},
+        {"title": "Advanced Rigid & Kinesiology Taping", "focus": "Structural joint support and neuromuscular taping for the shoulder, knee, ankle, and foot.", "application": "Utilising specialised taping patterns to unload vulnerable ligaments and tendons, allowing safe movement during rehab or competition."},
+        {"title": "Complex Joint Biomechanics (Knee, Shoulder & Ankle)", "focus": "Expert assessment of sports-specific mechanics, focusing on complex injuries like ACL tears, meniscus damage, rotator cuff strains, and severe ankle syndesmosis sprains.", "application": "Identifying mechanical faults in running, throwing, or jumping that may be driving persistent athletic pain."},
+        {"title": "High-Performance Strength & Conditioning", "focus": "Periodisation, exercise physiology, and tissue loading principles to safely bridge the gap between early clinical healing and high-intensity sport.", "application": "Building custom gym-based rehab programs to optimise explosive power, speed, agility, and sport-specific endurance."}
+      ]}],
+      ["Get Back in the Game Stronger", {"text": "Don't let a sports injury keep you on the sidelines. Book a specialised athletic assessment with Port Augusta’s dedicated APA-trained sports physical therapy specialist today.", "booking": true, "bookingLabel": "Book a sports assessment"}]
+    ]
+  },
+  {
+    "slug": "workplace-injury-physiotherapy-port-augusta",
+    "card": "WorkCover",
+    "linkText": "workplace injury care",
+    "title": "WorkCover SA & Occupational Physiotherapy",
+    "description": "Occupational physiotherapy in Port Augusta, including workplace assessments, manual task assessments, ADL assessments and return-to-work programs.",
+    "intro": "Navigating workplace injuries requires more than generic clinical care. It demands a specialised understanding of heavy industry, task mechanics, and structured return-to-work systems to safely minimise employee downtime and business liability.",
+    "sections": [
+      ["Why Choose Our Occupational Physiotherapy Services?", {"items": [
+        {"label": "Elite Heavy Industry Experience", "text": "Surendhiran Subramanian brings a rare depth of industrial expertise to the region, combining 3 years of hands-on experience working with mining giants like BHP with a current leadership role as the Lead Physiotherapist at OneSteel Manufacturing."},
+        {"label": "Certified Occupational Expertise", "text": "Having completed Level 1 Occupational Physiotherapy training, our clinician operates at the highest standard of injury management, early intervention frameworks, and WorkCover SA compliance requirements."},
+        {"label": "Workplace-Driven Solutions", "text": "We bridge the gap between medical recovery and actual site demands. We ensure rehabilitation protocols mimic real-world industrial tasks, giving employers and workers total confidence during the return-to-work transition."}
+      ]}],
+      ["Our Specialised On-Site & Clinical Services", {"conditions": [
+        {"title": "Workplace Visits & Ergonomic Assessments", "focus": "Comprehensive assessments of physical workspaces, office setups, and industrial machinery interfaces.", "application": "Identifying mechanical stressors, modifying environments, and optimising workstation ergonomics to eliminate repetitive strain and acute injury risks."},
+        {"title": "Hazardous Manual Task Assessments", "focus": "Biomechanical evaluation of high-risk tasks involving heavy lifting, awkward postures, or repetitive movements.", "application": "Delivering practical, engineered, and behavioural solutions to significantly reduce the risk of musculoskeletal injuries on the floor or out in the field."},
+        {"title": "Activities of Daily Living (ADL) Assessments", "focus": "Thorough clinical evaluations to determine how a workplace injury impacts an individual's functional capability at work and home.", "application": "Providing clear, objective reporting to insurers and medical panels to ensure appropriate funding and support pathways."},
+        {"title": "Gradual Return to Work (RTW) Programs", "focus": "Designing highly structured, progressive recovery timelines tailored directly to an employee's specific physical capacities and job restrictions.", "application": "Providing step-by-step physical conditioning to safely transition workers from modified duties back to full, unrestricted capacity without symptom flare-ups."}
+      ]}],
+      ["Streamlined Care for Local Businesses & Workers", {"text": "Whether you are an employer looking to optimise your workplace safety or an injured worker navigating a WorkCover SA claim, partner with Port Augusta's leading industrial and occupational physiotherapy specialist today.", "booking": true, "bookingLabel": "View workplace injury appointments"}]
+    ]
+  },
+  {
+    "slug": "geriatric-physiotherapy-port-augusta",
+    "card": "Geriatric Wellness",
+    "linkText": "geriatric wellness",
+    "title": "Geriatric Wellness & Healthy Ageing",
+    "description": "Older-adult physiotherapy in Port Augusta for balance, mobility, falls prevention, age-related conditions and rehabilitation at Nova Movement Atelier.",
+    "intro": "Maintaining physical independence, mobility, and confidence is vital as we age. Specialised geriatric physiotherapy focuses on optimising strength, improving balance, and managing age-related conditions so you can stay active and live safely at home.",
+    "sections": [
+      ["Why Choose Our Geriatric Wellness Clinic?", {"items": [
+        {"label": "Advanced Clinical Frameworks", "text": "Surendhiran Subramanian combines advanced training in vestibular rehabilitation, musculoskeletal care, and hydrotherapy to deliver comprehensive, evidence-based wellness programs tailored specifically for seniors."},
+        {"label": "Proactive Fall Prevention", "text": "We address the key physical factors that lead to falls—such as inner ear balance issues, muscle weakness, and stiff joints—to restore your confidence on your feet."},
+        {"label": "Compassionate, Patient-Centred Care", "text": "We design gentle, paced treatment programs that respect your comfort levels, aiming to reduce pain and preserve your long-term physical freedom right here in Port Augusta."}
+      ]}],
+      ["Specialised Programs We Expertly Provide", {"conditions": [
+        {"title": "Comprehensive Balance & Fall Prevention", "focus": "Identification of individual fall risks by evaluating leg strength, walking mechanics, and spatial awareness.", "application": "Utilising evidence-based balance exercises to reduce the risk of trips, restoring your confidence when walking on uneven ground or in crowded public areas."},
+        {"title": "Mobility, Gait & Walking Aid Training", "focus": "Assessing your walking pattern and ensuring your walking frame, stick, or crutches are correctly fitted to your height and physical capabilities.", "application": "Retraining safe walking mechanics to optimise your energy levels and ensure safe transfers in and out of chairs, cars, or bed."},
+        {"title": "Management of Chronic Age-Related Conditions", "focus": "Alleviating discomfort caused by osteoarthritis, osteoporosis, spinal stenosis, and chronic lower back stiffness.", "application": "Implementing safe joint-loading protocols, gentle manual therapy, and tailored home stretching routines to safely keep stiffness at bay."},
+        {"title": "Post-Surgical & Post-Hospital Rehabilitation", "focus": "Structured physical recovery following partial or total hip replacements, knee replacements, or prolonged periods of hospital bed rest.", "application": "Providing step-by-step guidance to rebuild lost muscle mass, safely restore your joint range of movement, and help you regain your baseline independence."}
+      ]}],
+      ["Our Gentle Rehabilitation Pathways", {"ordered": true, "items": [
+        {"label": "Hydrotherapy & Aquatic Exercise", "text": "Utilising pool-based therapy to entirely remove joint impact, letting you move, stretch, and build core muscle strength with absolute comfort."},
+        {"label": "Functional Home Exercise Plans", "text": "Simple, safe, and effective everyday exercises that you can confidently perform at home to maintain your cardiovascular health and joint flexibility."},
+        {"label": "Bone-Density Targeted Strengthening", "text": "Supervised, gentle resistance training customised to safely stimulate and protect bone strength for those managing osteopenia or osteoporosis."}
+      ]}],
+      ["Preserve Your Independence & Age with Confidence", {"text": "Don't let a fear of falling or persistent joint stiffness limit your lifestyle. Book a comprehensive wellness and mobility assessment with Port Augusta’s dedicated senior physical therapy specialist today.", "booking": true, "bookingLabel": "Book a wellness & mobility assessment"}]
+    ],
+    "faqs": []
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "title": "Vestibular Rehabilitation & Balance Therapy",
+  "description": "Dizziness, vertigo and balance physiotherapy in Port Augusta. Explore vestibular rehabilitation and balance therapy at Nova Movement Atelier.",
+  "intro": "If you are suffering from dizziness, vertigo, or balance instability, specialised, evidence-based physical therapy is available right here in your community.",
+  "sections": [
+    ["Why Choose Our Vestibular Clinic?", {"items": [
+      {"label": "Port Augusta's Only APA-Certified Provider", "text": "While a small number of physiotherapists interstate (such as in Queensland) have taken this advanced training, Surendhiran Subramanian is the only physiotherapist in Port Augusta and the region to have completed this competency-based course through the Australian Physiotherapy Association (APA). Local patients do not need to travel to Adelaide or look interstate for elite-level dizziness and balance care."},
+      {"label": "International Elite Training", "text": "This intensive 65-hour clinical program was delivered directly through the APA and lectured exclusively by leading, world-renowned vestibular specialists travelling from the United States."},
+      {"label": "Advanced Technology & Methods", "text": "We utilise state-of-the-art assessment techniques to pinpoint the root cause of your dizziness and map out a precise, customised recovery plan."}
+    ]}],
+    ["Conditions We Expertly Manage", {"conditions": [
+      {"title": "BPPV (Benign Paroxysmal Positional Vertigo)", "symptoms": "Intense, brief spinning sensations triggered by tilting or turning your head.", "help": "Particle repositioning manoeuvres (like the Epley manoeuvre) to clear displaced crystals from your inner ear rapidly."},
+      {"title": "Vestibular Migraine & Neuritis", "symptoms": "Persistent rocking sensations, light sensitivity, unsteadiness, or severe post-viral dizziness.", "help": "Customised habituation and gaze-stability exercises to retrain how your brain and ears communicate."},
+      {"title": "Post-Concussion Syndrome", "symptoms": "Lingering dizziness, brain fog, and visual strain following a head impact or workplace injury.", "help": "Targeted neuromotor and visual-vestibular tracking therapies to safely restore your daily function."},
+      {"title": "General Balance & Fall Prevention", "symptoms": "Feeling unsteady on uneven ground, fear of falling, or age-related mobility decline.", "help": "Lower-limb strengthening and proprioceptive training to keep you independent and confident."}
+    ]}],
+    ["What to Expect on Your First Visit", {"ordered": true, "items": [
+      {"label": "Comprehensive Diagnostic Evaluation", "text": "A thorough look into your medical history, eye movements, and neck mechanics to find the precise source of your symptoms."},
+      {"label": "Clear Diagnosis & Explanation", "text": "We take the time to map out exactly what is happening inside your vestibular system so you understand your recovery path."},
+      {"label": "Immediate Home Exercise Plan", "text": "You will leave your very first session with safe, highly effective exercises to accelerate your healing at home."}
+    ]}],
+    ["Take Control of Your Balance Today", {"text": "Don't let vertigo isolate you at home. Book an appointment today to see Port Augusta's dedicated APA-credentialed vestibular physiotherapy specialist and safely get back on your feet.", "booking": true}]
+  ]
+}

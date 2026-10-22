@@ -20,7 +20,7 @@ Build settings:
 
 - `appointmentsFeesEnabled` in `site-settings.json` controls the Appointments & fees section; currently `false`. Set to `true` and rebuild/redeploy to restore the section and fees navigation label. An optional `APPOINTMENTS_FEES_ENABLED=true|false` environment variable overrides this setting. Hidden fees are excluded from published HTML; source content is preserved in `templates/appointments-fees.html`.
 
-- `SERVICE_PAGES_ENABLED=true` enables the three service pages, card links and sitemap entries. Set to `false` and redeploy to disable them.
+- `SERVICE_PAGES_ENABLED=true` enables the five service pages, card links and sitemap entries. Set to `false` and redeploy to disable them.
 - `INDEXING_ENABLED=false` keeps temporary deployments out of search using both robots metadata and an HTTP header. This is not password protection.
 - `SITE_URL` optionally overrides the absolute canonical and sitemap origin. By default the Netlify deployment URL is used.
 
