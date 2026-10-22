@@ -4,11 +4,13 @@ const flag=(name,fallback)=>{const value=process.env[name];if(value===undefined)
 const indexing=flag('INDEXING_ENABLED',false);
 const enabled=flag('SERVICE_PAGES_ENABLED',settings.servicePagesEnabled);
 const feesEnabled=flag('APPOINTMENTS_FEES_ENABLED',settings.appointmentsFeesEnabled??false);
+const certificatesEnabled=flag('CERTIFICATES_ENABLED',settings.certificatesEnabled??false);
 const origin=process.env.SITE_URL||process.env.DEPLOY_PRIME_URL||process.env.URL||settings.siteUrl;
 // Start from maintained sources so disabled service routes cannot survive a previous build.
 fs.mkdirSync('dist',{recursive:true});
 fs.cpSync('src','dist',{recursive:true});
 let homepage=fs.readFileSync('dist/index.html','utf8');
+homepage=homepage.replace('<!-- certificates-section -->',certificatesEnabled?fs.readFileSync('templates/certificates.html','utf8'):'');
 homepage=homepage.replace('<!-- appointments-fees-section -->',feesEnabled?fs.readFileSync('templates/appointments-fees.html','utf8'):'');
 if(feesEnabled)homepage=homepage.replace('href="#first-visit">First visit</a>','href="#first-visit">First visit &amp; fees</a>');
 fs.writeFileSync('dist/index.html',homepage);
