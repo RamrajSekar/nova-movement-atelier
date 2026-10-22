@@ -1,0 +1,88 @@
+{
+  "certificates": [
+    {
+      "id": "vestibular-competency-2025",
+      "title": "Vestibular rehabilitation: a competency-based course",
+      "issuer": "Australian Physiotherapy Association",
+      "type": "completion",
+      "displayLabel": "Certificate of completion",
+      "date": "24–29 June 2025",
+      "year": 2025,
+      "cpdHours": 65,
+      "publicImage": "/assets/certificates/vestibular-competency-2025.webp",
+      "thumbnail": "/assets/certificates/vestibular-competency-2025-thumb.webp"
+    },
+    {
+      "id": "sports-level-2-2024",
+      "title": "Sports Physiotherapy Level 2",
+      "issuer": "Australian Physiotherapy Association",
+      "type": "attendance",
+      "displayLabel": "Certificate of attendance",
+      "date": "8–10 March 2024",
+      "year": 2024,
+      "cpdHours": 30,
+      "publicImage": "/assets/certificates/sports-level-2-2024.webp",
+      "thumbnail": "/assets/certificates/sports-level-2-2024-thumb.webp"
+    },
+    {
+      "id": "vestibular-introduction-2024",
+      "title": "Introduction to Vestibular Rehabilitation in Adults of All Ages",
+      "issuer": "Australian Physiotherapy Association",
+      "type": "attendance",
+      "displayLabel": "Certificate of attendance",
+      "date": "20–21 July 2024",
+      "year": 2024,
+      "cpdHours": 15,
+      "publicImage": "/assets/certificates/vestibular-introduction-2024.webp",
+      "thumbnail": "/assets/certificates/vestibular-introduction-2024-thumb.webp"
+    },
+    {
+      "id": "neurological-pilates-2024",
+      "title": "Introduction to pilates for neurological clients",
+      "issuer": "Australian Physiotherapy Association",
+      "type": "attendance",
+      "displayLabel": "Certificate of attendance",
+      "date": "5–6 October 2024",
+      "year": 2024,
+      "cpdHours": 14,
+      "publicImage": "/assets/certificates/neurological-pilates-2024.webp",
+      "thumbnail": "/assets/certificates/neurological-pilates-2024-thumb.webp"
+    },
+    {
+      "id": "mulligan-lower-quadrant-2023",
+      "title": "Mulligans Concept Lower Quadrant",
+      "issuer": "AAP Education",
+      "type": "completion",
+      "displayLabel": "Certificate of completion",
+      "date": "25–26 February 2023",
+      "year": 2023,
+      "cpdHours": 16,
+      "publicImage": "/assets/certificates/mulligan-lower-quadrant-2023.webp",
+      "thumbnail": "/assets/certificates/mulligan-lower-quadrant-2023-thumb.webp"
+    },
+    {
+      "id": "advanced-cervical-2022",
+      "title": "The complete and advanced upper cervical spine and head",
+      "issuer": "Australian Specialist Physiotherapy Education and Australian Physiotherapy Association",
+      "type": "attendance",
+      "displayLabel": "Certificate of attendance",
+      "date": "28–30 October 2022",
+      "year": 2022,
+      "cpdHours": 24,
+      "publicImage": "/assets/certificates/advanced-cervical-2022.webp",
+      "thumbnail": "/assets/certificates/advanced-cervical-2022-thumb.webp"
+    },
+    {
+      "id": "sports-level-1-2022",
+      "title": "Sports Physiotherapy Level 1",
+      "issuer": "Australian Physiotherapy Association",
+      "type": "attendance",
+      "displayLabel": "Certificate of attendance",
+      "date": "26–27 February 2022",
+      "year": 2022,
+      "cpdHours": 30,
+      "publicImage": "/assets/certificates/sports-level-1-2022.webp",
+      "thumbnail": "/assets/certificates/sports-level-1-2022-thumb.webp"
+    }
+  ]
+}

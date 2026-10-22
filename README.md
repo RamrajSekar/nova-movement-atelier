@@ -18,7 +18,7 @@ Import this GitHub repository in Netlify. The included `netlify.toml` sets the b
 
 Build settings:
 
-- `certificatesEnabled` in `site-settings.json` controls the certificate strip and viewer; currently `false`. The optional `CERTIFICATES_ENABLED=true|false` environment variable overrides it at build time. Samples are clearly labelled placeholders, not credentials. Replace the samples and add verified course titles, issuers, and completion years before enabling for deployment. The local `dist/review-certificates.html` file is an untracked review build and is never part of a clean Netlify build.
+- `certificatesEnabled` in `site-settings.json` controls the certificate strip and viewer; currently `true`. `CERTIFICATES_ENABLED=true|false` overrides it at build time. Seven actual certificates use optimised WebP images in `src/assets/certificates`; original documents are stored outside this repository. Thumbnails show years; the viewer retains attendance/completion details.
 
 - `appointmentsFeesEnabled` in `site-settings.json` controls the Appointments & fees section; currently `false`. Set to `true` and rebuild/redeploy to restore the section and fees navigation label. An optional `APPOINTMENTS_FEES_ENABLED=true|false` environment variable overrides this setting. Hidden fees are excluded from published HTML; source content is preserved in `templates/appointments-fees.html`.
 

@@ -1,6 +1,6 @@
 {
   "servicePagesEnabled": true,
   "appointmentsFeesEnabled": false,
-  "certificatesEnabled": false,
+  "certificatesEnabled": true,
   "siteUrl": "https://nova-movement-mobile-concept.russetvenus65536.chatgpt.site"
 }
