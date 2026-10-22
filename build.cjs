@@ -10,7 +10,7 @@ const origin=process.env.SITE_URL||process.env.DEPLOY_PRIME_URL||process.env.URL
 fs.mkdirSync('dist',{recursive:true});
 fs.cpSync('src','dist',{recursive:true});
 let homepage=fs.readFileSync('dist/index.html','utf8');
-homepage=homepage.replace('<!-- certificates-section -->',certificatesEnabled?fs.readFileSync('templates/certificates.html','utf8'):'');
+homepage=homepage.replace('<!-- certificates-section -->',certificatesEnabled?require('./render-certificates.cjs')():'');
 homepage=homepage.replace('<!-- appointments-fees-section -->',feesEnabled?fs.readFileSync('templates/appointments-fees.html','utf8'):'');
 if(feesEnabled)homepage=homepage.replace('href="#first-visit">First visit</a>','href="#first-visit">First visit &amp; fees</a>');
 fs.writeFileSync('dist/index.html',homepage);

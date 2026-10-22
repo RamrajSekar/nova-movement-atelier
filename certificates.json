@@ -1,4 +1,9 @@
 {
+  "featuredCertificates": [
+    "vestibular-competency-2025",
+    "tmd-2025",
+    "sports-level-2-2024"
+  ],
   "certificates": [
     {
       "id": "vestibular-competency-2025",
@@ -11,6 +16,18 @@
       "cpdHours": 65,
       "publicImage": "/assets/certificates/vestibular-competency-2025.webp",
       "thumbnail": "/assets/certificates/vestibular-competency-2025-thumb.webp"
+    },
+    {
+      "id": "tmd-2025",
+      "title": "Temporomandibular disorders (TMD) – A physiotherapy perspective",
+      "issuer": "Australian Physiotherapy Association",
+      "type": "attendance",
+      "displayLabel": "Certificate of attendance",
+      "date": "3–4 May 2025",
+      "year": 2025,
+      "cpdHours": 15,
+      "publicImage": "/assets/certificates/tmd-2025.webp",
+      "thumbnail": "/assets/certificates/tmd-2025-thumb.webp"
     },
     {
       "id": "sports-level-2-2024",
@@ -59,6 +76,30 @@
       "cpdHours": 16,
       "publicImage": "/assets/certificates/mulligan-lower-quadrant-2023.webp",
       "thumbnail": "/assets/certificates/mulligan-lower-quadrant-2023-thumb.webp"
+    },
+    {
+      "id": "neurological-level-1-part-b-2023",
+      "title": "Neurological Physiotherapy Level 1 – Part B",
+      "issuer": "Australian Physiotherapy Association",
+      "type": "attendance",
+      "displayLabel": "Certificate of attendance",
+      "date": "15–16 July 2023",
+      "year": 2023,
+      "cpdHours": 16,
+      "publicImage": "/assets/certificates/neurological-level-1-part-b-2023.webp",
+      "thumbnail": "/assets/certificates/neurological-level-1-part-b-2023-thumb.webp"
+    },
+    {
+      "id": "hydrotherapy-introduction-2023",
+      "title": "Introductory Hydrotherapy Course",
+      "issuer": "Gateway Physiotherapy (ESSA-accredited professional development)",
+      "type": "completion",
+      "displayLabel": "Certificate of completion",
+      "date": "25 March 2023",
+      "year": 2023,
+      "cpdHours": 4,
+      "publicImage": "/assets/certificates/hydrotherapy-introduction-2023.webp",
+      "thumbnail": "/assets/certificates/hydrotherapy-introduction-2023-thumb.webp"
     },
     {
       "id": "advanced-cervical-2022",

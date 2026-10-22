@@ -18,7 +18,7 @@ Import this GitHub repository in Netlify. The included `netlify.toml` sets the b
 
 Build settings:
 
-- `certificatesEnabled` in `site-settings.json` controls the certificate strip and viewer; currently `true`. `CERTIFICATES_ENABLED=true|false` overrides it at build time. Seven actual certificates use optimised WebP images in `src/assets/certificates`; original documents are stored outside this repository. Thumbnails show years; the viewer retains attendance/completion details.
+- `certificatesEnabled` in `site-settings.json` controls the certificate strip and viewer; currently `true`. `CERTIFICATES_ENABLED=true|false` overrides it at build time. Ten actual certificates use optimised WebP images in `src/assets/certificates`; original documents are stored outside this repository. Thumbnails show years; the viewer retains attendance/completion details.
 
 - `appointmentsFeesEnabled` in `site-settings.json` controls the Appointments & fees section; currently `false`. Set to `true` and rebuild/redeploy to restore the section and fees navigation label. An optional `APPOINTMENTS_FEES_ENABLED=true|false` environment variable overrides this setting. Hidden fees are excluded from published HTML; source content is preserved in `templates/appointments-fees.html`.
 
@@ -33,3 +33,9 @@ Before public launch: complete mobile/browser QA, have the clinic approve copy a
 ## Source notes
 
 The repository contains the current approved design and only the image assets it references. The practitioner portrait was enhanced with AI and should be approved by Suren before public release. Hosting credentials and Sites-specific metadata are excluded.
+
+## Featured certificates
+
+Edit `featuredCertificates` at the top of `certificates.json` to choose the three initially visible certificates. List exactly three certificate IDs in the desired order, then run `npm run build`. The remaining certificates keep their order from the `certificates` array. The enlarged viewer follows the featured three, then the remaining certificates. Unknown or duplicate IDs fail the build with a clear error.
+
+Current featured certificates: Vestibular competency (2025), TMD (2025), and Sports Physiotherapy Level 2 (2024).
