@@ -9,6 +9,17 @@ home=home.replace(/<title>.*?<\/title>/,'<title>Physio Port Augusta | Nova Movem
 if(!home.includes('class="hero-tagline"'))home=home.replace('<p class="intro">','<p class="hero-tagline">Care that moves with you.</p><p class="intro">');
 home=home.replace(/<link rel="canonical"[^>]*>/g,'').replace(/<meta property="og:[^"]*"[^>]*>/g,'');
 home=home.replace('</head>',`<link rel="canonical" href="${origin}/"><meta property="og:title" content="Physio Port Augusta | Nova Movement Atelier"><meta property="og:description" content="Personalised physiotherapy in Port Augusta. Explore care at Nova Movement Atelier."><meta property="og:url" content="${origin}/"><meta property="og:type" content="website"></head>`);
+const clinicSchema={
+ '@context':'https://schema.org',
+ '@type':'MedicalClinic',
+ '@id':origin+'/#clinic',
+ name:'Nova Movement Atelier',
+ url:origin+'/',
+ telephone:'+61482044525',
+ image:origin+'/assets/suren-portrait.webp',
+ address:{'@type':'PostalAddress',streetAddress:'90 Commercial Road',addressLocality:'Port Augusta',addressRegion:'SA',addressCountry:'AU'}
+};
+home=home.replace('</head>','<script type="application/ld+json">'+JSON.stringify(clinicSchema).replace(/</g,'\\u003c')+'</script></head>');
 home=home.replace(/<!-- service-links:start -->[\s\S]*?<!-- service-links:end -->/g,'');
 if(!home.includes('.hero-tagline{'))home=home.replace('</style>','.hero-tagline{font-family:Georgia,serif;font-size:25px;color:#66815c;margin-bottom:18px}.service-page-link{display:inline-block;margin-top:18px;font-size:14px;text-underline-offset:5px}.service-page-hero{max-width:850px;padding-top:55px;padding-bottom:35px}.service-page-hero h1{font-size:clamp(40px,5vw,62px);margin-top:22px}.service-page-content{max-width:850px;padding-bottom:55px}.service-page-content h2{font-size:32px;letter-spacing:-.7px;margin-top:38px}.service-page-content p,.service-page-content li{color:var(--muted)}.service-page-content li{margin-bottom:10px}.related-services{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:35px}.related-services a{font-size:14px;text-underline-offset:5px}@media(max-width:800px){.service-page-hero{padding-top:30px}.hero-tagline{font-size:23px}} </style>');
 const pages=[
@@ -23,6 +34,14 @@ for(const content of JSON.parse(fs.readFileSync('service-content.json','utf8')))
  if(existing)Object.assign(existing,content);
  else pages.push({faqs:[],...content});
 }
+const seoTitles={
+ 'sports-physiotherapy-port-augusta':'Sports Physiotherapy Port Augusta',
+ 'dizziness-balance-physiotherapy-port-augusta':'Dizziness & Balance Physiotherapy Port Augusta',
+ 'workplace-injury-physiotherapy-port-augusta':'Workplace Injury Physiotherapy Port Augusta',
+ 'musculoskeletal-physiotherapy-port-augusta':'Musculoskeletal Physiotherapy Port Augusta',
+ 'geriatric-physiotherapy-port-augusta':'Healthy Ageing Physiotherapy Port Augusta'
+};
+for(const p of pages)p.seoTitle=seoTitles[p.slug]||p.title+' in Port Augusta';
 const renderBody=body=>{
  if(typeof body==='string')return `<p>${escape(body)}</p>`;
  if(Array.isArray(body))return `<ul>${body.map(item=>`<li>${escape(item)}</li>`).join('')}</ul>`;
@@ -40,10 +59,10 @@ fs.writeFileSync('dist/index.html',home);
 for(const p of pages){
  const dir='dist/'+p.slug;
  if(!settings.servicePagesEnabled){if(fs.existsSync(dir+'/index.html'))fs.unlinkSync(dir+'/index.html');continue;}
- let page=home.replace(/<title>.*?<\/title>/,`<title>${escape(p.title)} | Nova Movement Atelier</title>`)
+ let page=home.replace(/<title>.*?<\/title>/,`<title>${escape(p.seoTitle)} | Nova Movement Atelier</title>`)
  .replace(/<meta name="description" content="[^"]*">/,`<meta name="description" content="${escape(p.description)}">`)
  .replace(/<link rel="canonical"[^>]*>/,`<link rel="canonical" href="${origin}/${p.slug}/">`)
- .replace(/<meta property="og:title"[^>]*>/,`<meta property="og:title" content="${escape(p.title)} | Nova Movement Atelier">`)
+ .replace(/<meta property="og:title"[^>]*>/,`<meta property="og:title" content="${escape(p.seoTitle)} | Nova Movement Atelier">`)
  .replace(/<meta property="og:description"[^>]*>/,`<meta property="og:description" content="${escape(p.description)}">`)
  .replace(/<meta property="og:url"[^>]*>/,`<meta property="og:url" content="${origin}/${p.slug}/">`);
  const content=`<main><section class="wrap service-page-hero"><a href="/#care">← Our expertise</a><p class="eyebrow" style="margin-top:28px">Nova Movement Atelier · Port Augusta</p><h1>${escape(p.title)}</h1><p class="intro">${escape(p.intro)}</p><div class="actions"><a class="button" href="https://nova-movement-atelier.au5.cliniko.com/bookings">View appointments ↗</a><a class="button light" href="tel:0482044525">Call the clinic</a></div></section><article class="wrap service-page-content">${p.sections.map(([title,body])=>`<section><h2>${escape(title)}</h2>${renderBody(body)}</section>`).join('')}${p.faqs.length?`<h2>Before you book</h2>${p.faqs.map(([q,a])=>`<details><summary>${escape(q)}</summary><p>${escape(a)}</p></details>`).join('')}`:''}<h2>Your physiotherapist</h2><p>Surendhiran Subramanian, known as Suren “SS”, is the Director of Nova Movement Atelier. BPhty · PGDip Sports &amp; ExSc (NZ) · APAM.</p><a href="/#suren">Meet Suren ↗</a><h2>Visit Nova Movement Atelier in Port Augusta</h2><p>90 Commercial Road, Port Augusta, South Australia.<br><a href="tel:0482044525">0482 044 525</a></p><nav class="related-services" aria-label="Other services">${pages.filter(x=>x!==p).map(x=>`<a href="/${x.slug}/">${escape(x.title)} ↗</a>`).join('')}</nav></article></main>`;
