@@ -42,11 +42,13 @@ async function main() {
       assert(!/name=["']googlebot/i.test(html));
       assert(html.includes(`rel="canonical" href="${url.href}"`));
       assert.equal((html.match(/<h1>/g) || []).length, 1);
+      assert.equal(html.includes('src="/assets/analytics.js"'), indexingPolicy(env).production);
     }
     assert(read('robots.txt').includes('Allow: /'));
     assert(!/Disallow:\s*\//i.test(read('robots.txt')));
     assert(read('robots.txt').includes('https://novamovementatelier.com.au/sitemap.xml'));
     assert(read('private/index.html').includes('noindex'));
+    assert(!read('private/index.html').includes('src="/assets/analytics.js"'));
     const globalHeaders = read('_headers').split('\n/private/')[0];
     assert.equal(globalHeaders.includes('X-Robots-Tag'), !expected);
     assert(read('_headers').includes('/private/\n  X-Robots-Tag: noindex'));

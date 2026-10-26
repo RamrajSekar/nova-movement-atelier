@@ -11,8 +11,9 @@ function indexingPolicy(env = process.env) {
   if (env.INDEXING_ENABLED !== undefined && !['true', 'false'].includes(env.INDEXING_ENABLED)) {
     throw Error('INDEXING_ENABLED must be true or false');
   }
-  const indexing = (!context || context === 'production') && productionHost && env.INDEXING_ENABLED !== 'false';
-  return { origin: PRODUCTION_ORIGIN, indexing };
+  const production = (!context || context === 'production') && productionHost;
+  const indexing = production && env.INDEXING_ENABLED !== 'false';
+  return { origin: PRODUCTION_ORIGIN, indexing, production };
 }
 
 module.exports = { PRODUCTION_ORIGIN, isProductionHost, indexingPolicy };
