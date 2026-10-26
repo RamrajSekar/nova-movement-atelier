@@ -6,3 +6,17 @@
   NODE_VERSION = "22"
   SERVICE_PAGES_ENABLED = "true"
   INDEXING_ENABLED = "false"
+
+[context.production.environment]
+  INDEXING_ENABLED = "true"
+  SITE_URL = "https://novamovementatelier.com.au"
+
+[context.deploy-preview.environment]
+  INDEXING_ENABLED = "false"
+
+[context.branch-deploy.environment]
+  INDEXING_ENABLED = "false"
+
+[[edge_functions]]
+  function = "indexing-host-guard"
+  path = "/*"
