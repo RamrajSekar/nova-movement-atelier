@@ -30,7 +30,10 @@ vm.runInContext(code, b.context);
 assert.equal(events().length, 1);
 assert.equal(b.scripts.length, 1);
 for (const [href, area, eventName, location] of [
-  ['https://nova-movement-atelier.au5.cliniko.com/bookings?patient=secret', '#booking', 'booking_click', 'booking_section'],
+  ['https://nova-movement-atelier.au5.cliniko.com/bookings?patient=secret', '#booking', 'booking_click', 'next_step'],
+  ['https://nova-movement-atelier.au5.cliniko.com/bookings', 'header', 'booking_click', 'header'],
+  ['https://nova-movement-atelier.au5.cliniko.com/bookings', '.mobile-bar', 'booking_click', 'mobile_menu'],
+  ['https://nova-movement-atelier.au5.cliniko.com/bookings', '.hero', 'booking_click', 'hero'],
   ['tel:0482044525', '.hero', 'phone_click', 'hero']
 ]) {
   const before = events().length;

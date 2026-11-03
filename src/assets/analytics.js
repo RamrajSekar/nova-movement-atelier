@@ -47,10 +47,10 @@
   document.head.appendChild(script);
 
   const buttonLocation = link => {
-    if (link.closest('.mobile-bar')) return 'mobile_bar';
+    if (link.closest('.mobile-bar')) return 'mobile_menu';
     if (link.closest('header')) return 'header';
     if (link.closest('.hero')) return 'hero';
-    if (link.closest('#booking')) return 'booking_section';
+    if (link.closest('#booking')) return 'next_step';
     if (link.closest('#suren')) return 'practitioner_section';
     if (link.closest('#visit')) return 'contact_section';
     if (link.closest('.service-page-hero')) return 'service_hero';
