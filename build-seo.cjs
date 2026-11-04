@@ -17,7 +17,7 @@ const clinicSchema={
  url:origin+'/',
  telephone:'+61482044525',
  image:origin+'/assets/suren-portrait.webp',
- address:{'@type':'PostalAddress',streetAddress:'90 Commercial Road',addressLocality:'Port Augusta',addressRegion:'SA',addressCountry:'AU'}
+ address:{'@type':'PostalAddress',streetAddress:'90 Commercial Road',addressLocality:'Port Augusta',addressRegion:'SA',postalCode:'5700',addressCountry:'AU'}
 };
 home=home.replace('</head>','<script type="application/ld+json">'+JSON.stringify(clinicSchema).replace(/</g,'\\u003c')+'</script></head>');
 home=home.replace(/<!-- service-links:start -->[\s\S]*?<!-- service-links:end -->/g,'');
