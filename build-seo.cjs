@@ -18,6 +18,11 @@ const clinicSchema={
  url:origin+'/',
  telephone:'+61482044525',
  image:origin+'/assets/suren-portrait.webp',
+ openingHoursSpecification:[
+  {'@type':'OpeningHoursSpecification',dayOfWeek:['Monday','Tuesday','Wednesday','Thursday','Friday'],opens:'17:00',closes:'19:00'},
+  {'@type':'OpeningHoursSpecification',dayOfWeek:'Saturday',opens:'08:00',closes:'11:00'},
+  {'@type':'OpeningHoursSpecification',dayOfWeek:'Sunday',opens:'00:00',closes:'00:00'}
+ ],
  address:{'@type':'PostalAddress',streetAddress:'90 Commercial Road',addressLocality:'Port Augusta',addressRegion:'SA',postalCode:'5700',addressCountry:'AU'}
 };
 home=home.replace('</head>','<script type="application/ld+json">'+JSON.stringify(clinicSchema).replace(/</g,'\\u003c')+'</script></head>');
@@ -37,7 +42,7 @@ for(const content of JSON.parse(fs.readFileSync('service-content.json','utf8')))
 }
 const seoTitles={
  'sports-physiotherapy-port-augusta':'Sports Physiotherapy Port Augusta',
- 'dizziness-balance-physiotherapy-port-augusta':'Dizziness & Balance Physiotherapy Port Augusta',
+ 'dizziness-balance-physiotherapy-port-augusta':'Vertigo & Balance Physio Port Augusta',
  'workplace-injury-physiotherapy-port-augusta':'Workplace Injury Physiotherapy Port Augusta',
  'musculoskeletal-physiotherapy-port-augusta':'Musculoskeletal Physiotherapy Port Augusta',
  'geriatric-physiotherapy-port-augusta':'Healthy Ageing Physiotherapy Port Augusta'
