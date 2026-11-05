@@ -34,7 +34,7 @@ for (const [href, area, eventName, location] of [
   ['https://nova-movement-atelier.au5.cliniko.com/bookings', 'header', 'booking_click', 'header'],
   ['https://nova-movement-atelier.au5.cliniko.com/bookings', '.mobile-bar', 'booking_click', 'mobile_menu'],
   ['https://nova-movement-atelier.au5.cliniko.com/bookings', '.hero', 'booking_click', 'hero'],
-  ['tel:0482044525', '.hero', 'phone_click', 'hero']
+  ['tel:+61482044525', '.hero', 'phone_click', 'hero']
 ]) {
   const before = events().length;
   const anchor = new b.Element(href, area);
@@ -52,7 +52,7 @@ for (const href of ['#booking', 'mailto:private@example.com', 'https://example.c
   b.listeners.click({ target: new b.Element(href) });
 }
 assert.equal(events().length, count);
-assert(!JSON.stringify(b.window.dataLayer).match(/private@example|patient=|secret|symptoms|0482044525|#/));
+assert(!JSON.stringify(b.window.dataLayer).match(/private@example|patient=|secret|symptoms|0482044525|61482044525|#/));
 for (const host of ['localhost', '127.0.0.1', 'nova-movement-atelier.netlify.app', 'deploy-preview-1--nova.netlify.app', 'staging.novamovementatelier.com.au', 'novamovementatelier.com.au.example.com']) {
   const blocked = browser(host);
   assert.equal(blocked.scripts.length, 0, host);
