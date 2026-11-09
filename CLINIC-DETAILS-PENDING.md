@@ -1,11 +1,8 @@
 # Details to confirm with Suren
 
-Local draft additions; not pushed or deployed.
-
 - Parking location, restrictions, and entrance photo or directions.
 - Step-free entrance, wheelchair access, accessible facilities, and assistance arrangements.
 - Accepted payment methods and when payment is due.
-- Opening hours.
 - First-visit preparation, required reports or referrals, and clothing guidance.
 - Medicare / WorkCover eligibility, paperwork, approvals and out-of-pocket costs.
 - Cancellation policy.

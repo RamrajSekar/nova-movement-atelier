@@ -3,12 +3,12 @@ const settings=JSON.parse(fs.readFileSync('site-settings.json','utf8'));
 if(typeof settings.servicePagesEnabled!=='boolean')throw Error('servicePagesEnabled must be true or false');
 const origin=new URL(settings.siteUrl).origin;
 let home=fs.readFileSync('dist/index.html','utf8');
-home=home.replace(/<title>.*?<\/title>/,'<title>Physio Port Augusta | Nova Movement Atelier</title>')
-.replace(/<meta name="description" content="[^"]*">/,'<meta name="description" content="Physiotherapy in Port Augusta for sports and everyday injuries, workplace injuries, dizziness and balance. Meet Suren at Nova Movement Atelier and book a visit.">')
+home=home.replace(/<title>.*?<\/title>/,'<title>Physiotherapy Port Augusta | Nova Movement Atelier</title>')
+.replace(/<meta name="description" content="[^"]*">/,'<meta name="description" content="Physiotherapy in Port Augusta for sports injuries, muscle and joint pain, dizziness and balance. Explore treatments and book an assessment online.">')
 .replace(/<h1>[\s\S]*?<\/h1>/,'<h1>Physiotherapy<br>in <em>Port Augusta.</em></h1>');
 if(!home.includes('class="hero-tagline"'))home=home.replace('<p class="intro">','<p class="hero-tagline">Care that moves with you.</p><p class="intro">');
 home=home.replace(/<link rel="canonical"[^>]*>/g,'').replace(/<meta property="og:[^"]*"[^>]*>/g,'');
-home=home.replace('</head>',`<link rel="canonical" href="${origin}/"><meta property="og:title" content="Physio Port Augusta | Nova Movement Atelier"><meta property="og:description" content="Personalised physiotherapy in Port Augusta. Explore care at Nova Movement Atelier."><meta property="og:url" content="${origin}/"><meta property="og:type" content="website"></head>`);
+home=home.replace('</head>',`<link rel="canonical" href="${origin}/"><meta property="og:title" content="Physiotherapy Port Augusta | Nova Movement Atelier"><meta property="og:description" content="Personalised physiotherapy in Port Augusta. Explore care at Nova Movement Atelier."><meta property="og:url" content="${origin}/"><meta property="og:type" content="website"></head>`);
 const clinicSchema={
  '@context':'https://schema.org',
  '@type':'MedicalClinic',
